@@ -46,6 +46,18 @@ nav a:focus {
 .center-heading {
     text-align: center;
 }
+.side-by-side {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.side-by-side .side-img {
+    width: 45%;
+    max-width: 300px;
+    height: auto;
+}
 footer{
     font-size: 75%;
     font-style: italic;
@@ -54,4 +66,21 @@ footer{
 }
 #contact{
     font-size: 90%;
+}
+table{
+    border: 2px solid #eaeafc;
+    border-collapse: collapse;
+}
+td, th{
+    border: 2px solid #b388f0;
+    padding: .5em;
+}
+td{ 
+    text-align: center;
+}
+.text{
+    text-align: center;
+}
+tr:nth-of-type(even)
+{ background-color: #8443e0;
 }
