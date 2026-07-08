@@ -40,7 +40,10 @@ nav a:hover,
 nav a:focus {
     color: #200127;
 }
-.center-image {
+..center-image {
+    text-align: center;
+}
+main {
     text-align: center;
 }
 .center-heading {
@@ -54,8 +57,9 @@ nav a:focus {
     flex-wrap: wrap;
 }
 .side-by-side .side-img {
-    width: 45%;
-    max-width: 300px;
+    flex: 1 1 45%;
+    max-width: 45%;
+    min-width: 180px;
     height: auto;
 }
 footer{
@@ -83,4 +87,100 @@ td{
 }
 tr:nth-of-type(even)
 { background-color: #8443e0;
+}
+.form-box {
+    background-color: #5c04e9;
+    border: 2px solid #9855f7;
+    border-radius: 8px;
+    padding: 0.5rem;
+    max-width: 220px;
+    margin: 1rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.form-box h4 {
+    margin: 0 0 0.5rem;
+    color: #e808d5;
+    text-align: center;
+    font-size: 1rem;
+}
+.form-box label {
+    display: block;
+    margin-top: 0.5rem;
+    color: #eaeafc;
+    font-size: 0.9rem;
+}
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box textarea {
+    background-color: #ddbbf9;
+    color: #eaeafc;
+    border: 1px solid #b388f0;
+    border-radius: 4px;
+    padding: 0.35rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+.form-box textarea {
+    height: 70px;
+}
+.form-box input[type="submit"] {
+    background-color: #e808d5;
+    color: #ffffff;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.6rem;
+    width: 100%;
+}
+.form-box input[type="submit"]:hover {
+    background-color: #853fee;
+}
+.content-box {
+    background-color: #640bf4;
+    border: 2px solid #b388f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.center-video {
+    display: block;
+    margin: 0 auto 1rem;
+}
+.content-box h3,
+.content-box h4 {
+    color: #e808d5;
+    margin-top: 0;
+}
+.content-box p {
+    color: #eaeafc;
+    line-height: 1.6;
+}
+.text-box {
+    background-color: #640bf4;
+    border: 2px solid #b388f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1 1 45%;
+    min-width: 250px;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.text-box h3 {
+    margin-top: 0;
+    color: #e808d5;
+}
+.text-box-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: 2rem 0;
+    padding: 0 1rem;
 }
